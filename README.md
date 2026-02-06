@@ -2,7 +2,7 @@
 
 My personal portfolio website built with Next.js and Tailwind CSS.
 
-🔗 **Live:** [lyma-portfolio.vercel.app](lyma-portfolio.vercel.app)
+🔗 **Live:** [lyma-portfolio.vercel.app](https://lyma-portfolio.vercel.app/)
 
 ## Tech Stack
 
