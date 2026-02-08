@@ -18,6 +18,13 @@ const PROJECTS = [
     live: "https://universmuslim-web.vercel.app",
     github: "https://github.com/Yerima18/universmuslim-web",
   },
+  {
+    title: "MIS Business Analytics Dashboard",
+    desc: "A comprehensive dashboard for managing and analyzing business data with interactive charts and real-time updates.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Recharts", "Mock Data", "React"],
+    live: "https://mis-business-analytics-dashboard.vercel.app/",
+    github: "https://github.com/Yerima18/mis-business-analytics-dashboard",
+  },
 ];
 
 export default function Projects() {
