@@ -8,7 +8,7 @@ const PROJECTS = [
     title: "SpendWise",
     desc: "Personal expense tracker with dashboard analytics, dark mode, and CSV export. Full authentication with NextAuth.js and PostgreSQL database.",
     tech: ["Next.js", "Prisma", "PostgreSQL", "NextAuth", "Tailwind CSS", "Recharts"],
-    live: "https://spendwise-yerima18.vercel.app",
+    live: "https://spendwise-five-tau.vercel.app/login",
     github: "https://github.com/Yerima18/spendwise",
   },
   {
