@@ -7,8 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        display: ["Sora", "sans-serif"],
-        body: ["Outfit", "sans-serif"],
+        display: ["var(--font-sora)", "sans-serif"],
+        body: ["var(--font-outfit)", "sans-serif"],
       },
     },
   },

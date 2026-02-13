@@ -4,15 +4,15 @@ import FadeIn from "./FadeIn";
 
 export default function About() {
   return (
-    <section id="about" className="max-w-[900px] mx-auto px-6 py-16">
+    <section id="about" className="max-w-[900px] mx-auto px-5 sm:px-6 py-12 sm:py-16">
       <FadeIn>
         <p className="text-xs text-[#bbb] font-medium tracking-[0.1em] uppercase mb-5">
           About
         </p>
       </FadeIn>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-start">
         <FadeIn delay={0.1}>
-          <h2 className="font-display text-[28px] font-bold tracking-[-0.03em] leading-[1.3]">
+          <h2 className="font-display text-[24px] sm:text-[28px] font-bold tracking-[-0.03em] leading-[1.3]">
             Building things<br/>for the web.
           </h2>
         </FadeIn>

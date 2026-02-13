@@ -11,18 +11,18 @@ const SKILLS = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="max-w-[900px] mx-auto px-6 py-16">
+    <section id="skills" className="max-w-[900px] mx-auto px-5 sm:px-6 py-12 sm:py-16">
       <FadeIn>
         <p className="text-xs text-[#bbb] font-medium tracking-[0.1em] uppercase mb-5">
           Skills
         </p>
       </FadeIn>
       <FadeIn delay={0.1}>
-        <h2 className="font-display text-[28px] font-bold tracking-[-0.03em] mb-9">
+        <h2 className="font-display text-[24px] sm:text-[28px] font-bold tracking-[-0.03em] mb-7 sm:mb-9">
           Tech I work with
         </h2>
       </FadeIn>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-5">
         {SKILLS.map((group, i) => (
           <FadeIn key={group.category} delay={0.1 + i * 0.08}>
             <div>
@@ -33,7 +33,7 @@ export default function Skills() {
                 {group.items.map((item) => (
                   <span
                     key={item}
-                    className="px-3 py-[7px] bg-white border border-[#ECEAE4] rounded-lg text-[13px] text-[#555] cursor-default hover:bg-[#1a1a1a] hover:text-white hover:border-[#1a1a1a] transition-all duration-200"
+                    className="px-3 py-[7px] bg-white border border-[#ECEAE4] rounded-lg text-[13px] text-[#555]"
                   >
                     {item}
                   </span>

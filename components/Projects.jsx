@@ -29,21 +29,21 @@ const PROJECTS = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="max-w-[900px] mx-auto px-6 py-16">
+    <section id="projects" className="max-w-[900px] mx-auto px-5 sm:px-6 py-12 sm:py-16">
       <FadeIn>
         <p className="text-xs text-[#bbb] font-medium tracking-[0.1em] uppercase mb-5">
           Projects
         </p>
       </FadeIn>
       <FadeIn delay={0.1}>
-        <h2 className="font-display text-[28px] font-bold tracking-[-0.03em] mb-9">
+        <h2 className="font-display text-[24px] sm:text-[28px] font-bold tracking-[-0.03em] mb-7 sm:mb-9">
           Selected work
         </h2>
       </FadeIn>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
         {PROJECTS.map((p, i) => (
           <FadeIn key={p.title} delay={0.1 + i * 0.1}>
-            <div className="bg-white border border-[#ECEAE4] rounded-[14px] p-7 flex flex-col h-full hover:-translate-y-1 hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)] transition-all duration-300">
+            <div className="bg-white border border-[#ECEAE4] rounded-[14px] p-5 sm:p-7 flex flex-col h-full hover:-translate-y-1 hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)] transition-all duration-300">
               <div className="flex justify-between items-start mb-3.5">
                 <h3 className="font-display text-lg font-bold tracking-[-0.02em]">
                   {p.title}
@@ -54,6 +54,7 @@ export default function Projects() {
                       href={p.github}
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label={`${p.title} source code on GitHub`}
                       className="text-[#999] hover:text-[#1a1a1a] transition-colors"
                     >
                       {Icons.github}
@@ -64,6 +65,7 @@ export default function Projects() {
                       href={p.live}
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label={`${p.title} live demo`}
                       className="text-[#999] hover:text-[#1a1a1a] transition-colors"
                     >
                       {Icons.external}
